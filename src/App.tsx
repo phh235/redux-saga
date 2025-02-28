@@ -1,9 +1,8 @@
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { getListPostRequest } from "./redux/slice";
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getListPostRequest } from './redux/slice';
 import { useSelector } from 'react-redux';
-import Card from "./components/Card";
-
+import Card from './components/Card';
 
 const App = () => {
   const dispatch = useDispatch();
@@ -13,17 +12,16 @@ const App = () => {
   }, [dispatch]);
 
   return (
-    <div className="p-3">
-      <div className="row">
+    <div className='px-3'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
         {listPost.map((post: any) => (
-          <div className="col-md-3 col-12">
-            <Card key={post.id} id={post.id} title={post.title} body={post.body} />
+          <div key={post.id}>
+            <Card id={post.id} title={post.title} body={post.body} />
           </div>
-
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

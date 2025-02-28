@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   listPost: [],
 };
 
 const postSlice = createSlice({
-  name: "Post",
+  name: 'Post',
   initialState,
   reducers: {
     getListPostRequest(state, action) {},
@@ -18,6 +18,5 @@ const postSlice = createSlice({
   },
 });
 
-export const { getListPostRequest, getListPostSuccess, getListPostFailure } =
-  postSlice.actions;
+export const { getListPostRequest, getListPostSuccess, getListPostFailure } = postSlice.actions;
 export default postSlice.reducer;
