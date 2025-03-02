@@ -1,1 +1,23 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@font-face {
+  font-family: 'Anton';
+  src: url('./assets/fonts/Anton.ttf');
+}
+
+@font-face {
+  font-family: 'ITCGaramondStd-BkCond';
+  src: url('./assets/fonts/ITCGaramondStd-BkCond.otf');
+}
+
+@font-face {
+  font-family: 'NotoSerifCJKjp-Bold';
+  src: url('./assets/fonts/NotoSerifCJKjp-Bold.otf');
+}
+@font-face {
+  font-family: 'Hiragino';
+  src: url('./assets/fonts/Hiragino Kaku Gothic Pro W3.otf');
+}
+@font-face {
+  font-family: 'Hiragino Kaku Gothic Pro W6';
+  src: url('./assets/fonts/Hiragino Kaku Gothic Pro W6.otf');
+}
