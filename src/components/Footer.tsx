@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <div className="bg-[#7E9BAE] mt-[40px]">
-      <div className="w-full flex-col justify-start items-center inline-flex">
-        <div className="self-stretch px-[15px] py-5 bg-[#7e9bae] flex-col justify-start items-center gap-5 flex">
+      <div className="w-full">
+        <div className="self-stretch px-[15px] md:px-[80px] py-5 bg-[#7e9bae] flex-col md:flex-row flex justify-start items-center md:items-start gap-5 md:gap-[220px]">
           <div className="flex-col justify-center items-center flex">
             <svg
               width="231"
@@ -85,23 +85,26 @@ const Footer = () => {
               TEL：080-4308-9907
             </div>
           </div>
-          <div className="lg:block hidden">
-            <div className="text-[14px] text-white leading-[18px] font-['Hiragino'] self-stretch flex-col justify-start items-start gap-1 inline-flex">
-              <div>HOME</div>
-              <div>製品紹介</div>
-              <div>　ブラックホース Gold</div>
-              <div>　ロイヤルハニー VIP</div>
-              <div>　ロイヤルハニー for Her</div>
-              <div>有効成分紹介</div>
-              <div>　ハチミツ</div>
-              <div>　カチプファティマ　トンカットアリ　高麗人参</div>
-              <div>　ビーポーレン　ローヤルゼリー　蜂の子</div>
-              <div>FAQ</div>
-              <div>偽物の見分け方</div>
-              <div>お問い合わせ</div>
+          <div className="lg:block hidden gap-[40px]">
+            <div className="flex items-center gap-[30px]">
+              <div className="w-[1px] h-[257px] bg-[#B5B5B5]"></div>
+              <div className="text-[14px] text-white leading-[18px] font-['Hiragino'] self-stretch flex-col justify-start items-start gap-1 inline-flex text-nowrap">
+                <div>HOME</div>
+                <div>製品紹介</div>
+                <div>　ブラックホース Gold</div>
+                <div>　ロイヤルハニー VIP</div>
+                <div>　ロイヤルハニー for Her</div>
+                <div>有効成分紹介</div>
+                <div>　ハチミツ</div>
+                <div>　カチプファティマ　トンカットアリ　高麗人参</div>
+                <div>　ビーポーレン　ローヤルゼリー　蜂の子</div>
+                <div>FAQ</div>
+                <div>偽物の見分け方</div>
+                <div>お問い合わせ</div>
+              </div>
             </div>
           </div>
-          <div className="bg-white rounded-[10px] p-5 pt-6 pb-10 flex flex-col items-center justify-center gap-1 self-stretch">
+          <div className="bg-white rounded-[10px] p-5 pt-6 pb-10 flex flex-col items-center justify-center gap-1 self-stretch md:self-start">
             <div className="text-center text-[#333333] text-xl font-semibold font-['Hiragino']">
               代理店を募集しております。
             </div>
@@ -110,10 +113,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="self-stretch px-4 py-1 bg-[#333333] md:justify-end justify-center items-center gap-1 inline-flex">
-          <div className="text-white text-sm font-light font-['Hiragino'] leading-tight">
-            Copyright © イヤルハニー
-          </div>
+        <div className="self-stretch px-4 py-1 bg-[#333333] md:justify-end justify-center items-center gap-1 inline-flex w-full">
+          <div className="text-white text-sm font-['Hiragino']">Copyright © イヤルハニー</div>
         </div>
       </div>
     </div>

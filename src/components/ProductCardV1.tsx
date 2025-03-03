@@ -28,45 +28,43 @@ const ProductCardV1 = () => {
     },
   ];
   return (
-    <div className="bg-[#7E9BAE] mt-[100px]">
-      <div className="font-[NotoSerifCJKjp-Bold] text-white md:text-[30px] text-[22px] md:flex md:justify-center md:items-center text-center px-[47.5px] py-4">
+    <div className="bg-[#7E9BAE] mt-[100px] py-5 px-[15px] md:px-[30px] lg:px-[80px]">
+      <div className="font-[NotoSerifCJKjp-Bold] text-white md:text-[30px] text-[22px] md:flex md:justify-center md:items-center text-center py-[47px]">
         Royal Honeyに欠かせない有効成分と効果
       </div>
-      <div className="flex justify-center items-center w-full min-h-screen">
-        <div className="max-w-[1123px] md:p-0 p-[15px] md:px-[30px]">
-          {data.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col md:flex-row justify-start md:mb-[32px] mb-[20px] bg-white"
-            >
-              <img
-                className="md:p-0 p-[15px] w-full md:w-[300px] h-auto pb-0 md:pb-0 md:self-stretch"
-                src={item.image}
-                alt={item.title}
-              />
-              <div className="flex-grow md:flex-grow-0 w-full h-auto md:h-[170px] px-0 md:px-6 md:py-3 py-0 pt-0 md:pt-[12px] bg-white flex-col justify-start items-start gap-2">
-                <div className="text-[#ebb133] md:text-[32px] md:leading-[44px] leading-[36px] md:flex md:items-center md:content-between lg:items-start md:p-0 px-[15px] text-[24px] font-[Anton] font-normal md:mt-0 mt-[12px] md:mb-0 mb-[10px]">
-                  <span className="line-clamp-2 text-center md:line-clamp-1 md:text-left">
-                    {item.title}
-                  </span>
-                </div>
-                <div className="h-auto md:h-[88px] md:px-3 px-0 md:py-1 py-0 flex-col justify-start items-start gap-1 flex">
-                  {item.content.map((content, index2) => (
-                    <div
-                      key={index2}
-                      className="w-full md:py-0 py-[8px] flex items-center justify-center font-[Hiragino] md:justify-start gap-2 md:bg-white bg-[#ebb133] text-[16px]"
-                    >
-                      <span className="text-[#ebb133]">● </span>
-                      <span className="md:text-black text-white text-base font-semibold">
-                        {content.text}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+      <div className="w-full">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="flex flex-col md:flex-row justify-start md:mb-[32px] mb-[20px] bg-white"
+          >
+            <img
+              className="md:p-0 p-[15px] w-full md:w-[300px] h-auto pb-0 md:pb-0 md:self-stretch"
+              src={item.image}
+              alt={item.title}
+            />
+            <div className="flex-grow md:flex-grow-0 w-full h-auto md:h-[170px] px-0 md:px-6 md:py-3 py-0 pt-0 md:pt-[12px] bg-white flex-col justify-start items-start gap-2">
+              <div className="text-[#ebb133] md:text-[32px] md:leading-[44px] leading-[36px] md:flex md:items-center md:content-between lg:items-start md:p-0 px-[15px] text-[24px] font-[Anton] font-normal md:mt-0 mt-[12px] md:mb-0 mb-[10px]">
+                <span className="line-clamp-2 text-center md:line-clamp-1 md:text-left">
+                  {item.title}
+                </span>
+              </div>
+              <div className="h-auto md:px-3 px-0 pt-1 flex-col justify-start items-start gap-2 flex">
+                {item.content.map((content, index2) => (
+                  <div
+                    key={index2}
+                    className="w-full md:py-0 py-[8px] flex items-center justify-center font-[Hiragino] md:justify-start gap-2 md:bg-white bg-[#ebb133] text-[16px]"
+                  >
+                    <span className="text-[#ebb133]">● </span>
+                    <span className="md:text-black text-white text-base font-semibold">
+                      {content.text}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -17,9 +17,9 @@ const FAQ = () => {
     },
   ];
   return (
-    <div className="bg-[#fff] mt-[100px]">
+    <div className="mt-[100px] md:px-[30px] px-[15px] lg:px-[80px]">
       <div className="flex justify-center items-center w-full">
-        <div className="w-full max-w-[1123px] p-0 px-[15px] md:px-[30px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px]">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[15px]">
           {data.map((item, index) => (
             <div key={index} className="w-full mb-[15px] md:mb-0">
               <img className="w-full h-auto" src={item.image} alt={item.title} />
