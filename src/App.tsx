@@ -1,21 +1,18 @@
-import BlackBox from "./components/BlackBox";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import ProductCard from "./components/ProductCard";
-import ProductCardV1 from "./components/ProductCardV1";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import TopPage from './pages/TopPage';
+import Product from './pages/Product';
 
-const App = () => {
+const AppRouter: React.FC = () => {
   return (
-    <div className="bg-white w-full">
-      {/* <Header /> */}
-      <ProductCard />
-      <ProductCardV1 />
-      <FAQ />
-      <BlackBox />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<TopPage />} />
+        <Route path="/products" element={<Product />} />
+      </Routes>
+    </Router>
   );
 };
 
-export default App;
+export default AppRouter;
+
