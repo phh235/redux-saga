@@ -24,7 +24,7 @@ export default function ProductDetailV1() {
     },
   ];
   return (
-    <div className="flex flex-col-reverse md:flex-row border border-red-500">
+    <div className="flex flex-col md:flex-row">
       <div className="px-[15px] font-['Hiragino'] text-base self-stretch">
         {details.map((detail, index) => (
           <div key={index}>
@@ -35,16 +35,20 @@ export default function ProductDetailV1() {
                 </div>
                 {Array.isArray(section.content) ? (
                   section.content.map((text, i) => (
-                    <div key={i} className="text-justify">
+                    <div key={i} className="text-justify font-light">
                       {text}
                     </div>
                   ))
                 ) : (
-                  <div className="text-justify">{section.content}</div>
+                  <div className="text-justify font-light">{section.content}</div>
                 )}
               </div>
             ))}
-            <img src={detail.image.src} alt={detail.image.alt} className="px-[22.5px]" />
+            <img
+              src={detail.image.src}
+              alt={detail.image.alt}
+              className="px-[22.5px] max-w-full min-[600px]:max-w-[380px] relative md:h-auto h-full"
+            />
           </div>
         ))}
       </div>

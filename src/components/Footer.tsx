@@ -3,6 +3,7 @@ const Footer = () => {
     <div className="bg-[#7E9BAE] mt-[40px]">
       <div className="w-full">
         <div className="self-stretch px-[15px] md:px-[80px] py-5 bg-[#7e9bae] flex-col md:flex-row flex justify-start items-center md:items-start gap-5 md:gap-[220px]">
+          {/* svg icon */}
           <div className="flex-col justify-center items-center flex">
             <svg
               width="231"
@@ -85,6 +86,7 @@ const Footer = () => {
               TEL：080-4308-9907
             </div>
           </div>
+          {/* menu */}
           <div className="lg:block hidden gap-[40px]">
             <div className="flex items-center gap-[30px]">
               <div className="w-[1px] h-[257px] bg-[#B5B5B5]"></div>
@@ -104,6 +106,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
+          {/* khối trắng */}
           <div className="bg-white rounded-[10px] p-5 pt-6 pb-10 flex flex-col items-center justify-center gap-1 self-stretch md:self-start">
             <div className="text-center text-[#333333] text-xl font-semibold font-['Hiragino']">
               代理店を募集しております。

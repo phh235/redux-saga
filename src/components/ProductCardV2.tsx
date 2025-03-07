@@ -15,9 +15,11 @@ export default function ProductCardV2() {
               High quality elegant honey
             </div>
           </div>
-          <img src="../src/assets/images/product-card-v2.png" alt="" className="w-full" />
+          <div className="w-full">
+            <img src="../src/assets/images/product-card-v2.png" alt="" className="w-full" />
+          </div>
         </div>
-        <div className="md:w-[700px]">
+        <div className="md:w-[800px]">
           <img
             src="https://s3-alpha-sig.figma.com/img/3f64/a111/e1d37e50f34766f110996d0471316dc7?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=CzdlD~2DdR3zG7rKj1Ovff90~dtd4QGYMFU12d4GXp4c0UJjV4E8BP6gHx5VjSQztY86JgCL15OwtC0JxXOfWMY~dGk8uRVxgOR0QkBvdhiiqpDmsexg55KEnMgEnfPIwhU8U9WAXqEcobY-FcO17~d37QvKGJpqwvH7-TxRpyCBm-fHgltn8WfBEGPvOgXD5naGnJBUooujIX~XIfMkJyvj1DKqLbxlQXJxO-zcG0r922iAbMUVjGrRqUNLcUIwWBUD1s7rUjBMpYk6h7~0r~gxkUgeTeDJejg7s5pjb8DNRaQTVva4bmz3lBAykmY7UaxAF6Gp6UcCQ43DozmLng__"
             alt=""

@@ -15,8 +15,10 @@ export default function Product() {
           <br /> いつまでも輝き続けるために
         </div>
         <div className="font-['NotoSerifCJKjp-Bold'] md:text-[21px] text-[16px] font-bold md:p-0 text-justify">
-          Black Horse Goldは、蜂蜜：9600mg、ローヤルゼリー：200mg、高麗人参：200mgという
-          天然の稀少成分を原料とし、栄養素をたっぷり含んだ男性の性欲を増強するハチミツです。
+          <div className="text-center">
+            Black Horse Goldは、蜂蜜：9600mg、ローヤルゼリー：200mg、高麗人参：200mgという
+            天然の稀少成分を原料とし、栄養素をたっぷり含んだ男性の性欲を増強するハチミツです。
+          </div>
         </div>
       </div>
       <ProductCardV2 />
